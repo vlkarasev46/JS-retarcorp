@@ -1,0 +1,40 @@
+.promo-block .promo-block-title {
+    color: orange;
+    font-family: courier;
+}
+.nav-item-hover {
+	background-color: #ffa;
+}
+
+h2 {
+   color: #1E90FF;
+   font-family: georgia;
+}
+
+
+h3{
+	color: #000000;
+	font-family: chicago;
+}
+
+h4{
+	background-color: #FFFF00;
+	color: #000000;	
+}
+
+.promo-banner .promo-banner-title {
+	color: #00FF00;
+	}
+h4 > a{
+	color: #FFFFFF;
+	background-color: #FF0000;
+    font-family: braggadocio;
+}
+
+p{
+	background-color: #000000;
+	color: #FFFFFF;
+	font-family: fantasy;
+
+}
+
