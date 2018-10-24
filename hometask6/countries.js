@@ -1,14 +1,14 @@
 var Country = {
 	countryList:[{
 	count:"Canada",
-	flag: "Red",
+	flag: "<img src = Flags/canada.jpg>",
 	code: 54,
 	population: 60000000,
 	
 },{
 
 	count:"Russia",
-	flag: "Red",
+	flag: "<img src = Flags/russia.jpg>",
 	code: 5,
 	population: 150000000,
 	
@@ -17,7 +17,7 @@ var Country = {
 {
   
 	count:"USA",
-	flag: "stars",
+	flag: "<img src = Flags/usa.jpg >",
 	code: 4,
 	population: 30000000,
 	
@@ -26,7 +26,7 @@ var Country = {
 {
 	
 	count:"Belarus",
-	flag: "Red-green",
+	flag: "<img src = Flags/belarus.jpg>",
 	code: 375,
 	population: 1000000,
 	
@@ -35,7 +35,7 @@ var Country = {
 {
 	
 	count:"England",
-	flag: "white-Red",
+	flag: "<img src = Flags/england.jpg>",
 	code: 1,
 	population: 65000000,
 	
@@ -44,7 +44,7 @@ var Country = {
 {
 	
 	count:"Brazil",
-	flag: "green",
+	flag: "<img src = Flags/brazil.jpg>",
 	code: 32,
 	population: 180000000,
 	
@@ -53,7 +53,7 @@ var Country = {
 {
 	
 	count:"China",
-	flag: "full Red",
+	flag: "<img src = Flags/china.jpg>",
 	code: 2,
 	population: 1500000000,
 	
@@ -63,7 +63,7 @@ var Country = {
 {
 	
 	count:"Egypt",
-	flag: "black",
+	flag: "<img src = Flags/egypt.jpg>",
 	code: 8,
 	population: 12490000,
 	
@@ -71,7 +71,7 @@ var Country = {
 {
 
 	count:"Germany",
-	flag: "yellow",
+	flag: "<img src = Flags/germany.jpg>",
 	code: 58,
 	population: 70000000,
 	
@@ -79,7 +79,7 @@ var Country = {
 {
 	
 	count:"France",
-	flag: "Blue",
+	flag: "<img src = Flags/france.jpg >",
 	code: 54,
 	population: 60000000,
 	
@@ -87,7 +87,7 @@ var Country = {
 {
 	
 	count:"Mexico",
-	flag: "White",
+	flag: "<img src = Flags/mexico.jpg>",
 	code: 9,
 	population: 32100000,
 	
@@ -96,19 +96,54 @@ var Country = {
 {
 
 	count:"Latvia",
-	flag: "Brown",
+	flag: "<img src = Flags/latvia.jpg>",
 	code: 10,
 	population: 3000000,
 	
 }],
 }
-document.write("<ul>")
+
+
+document.write("<table border='1'>")
+document.write("<tr>")
 c = Country.countryList.map(el => el.count)
                        .forEach(function(elenents){
-                       	document.write("<li>")
+                       	document.write("<td>")
                        	document.write(elenents)
-                       	document.write("</li>")
+                       	document.write("</td>")
                        });
-           document.write("</ul>")
+document.write("</tr>")
+
+document.write("<tr>")
+c = Country.countryList.map(el => el.flag)
+                       .forEach(function(elenents){
+                       	document.write("<td>")
+                       	document.write(elenents)
+                       	document.write("</td>")
+                       });
+
+document.write("</tr>")
+
+document.write("<tr>")
+c = Country.countryList.map(el => el.code)
+                       .forEach(function(elenents){
+                       	document.write("<td>")
+                       	document.write(elenents)
+                       	document.write("</td>")
+                       });
+
+document.write("</tr>")
+
+document.write("<tr>")
+c = Country.countryList.map(el => el.population)
+                       .forEach(function(elenents){
+                       	document.write("<td>")
+                       	document.write(elenents)
+                       	document.write("</td>")
+                       });
+
+document.write("</tr>")
+
+document.write("</table>")
 
 
