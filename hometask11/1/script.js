@@ -5,16 +5,13 @@
 // console.log(H);
 
 const xhr = new XMLHttpRequest();
-xhr.open("GET","1/mass.txt",true);
+xhr.open("GET","mass.txt",true);
 xhr.onload = function(){
 	document.body.innerHTML = this.responseText
 	
     var num = this.responseText.split(' ');
 
-     var harm = num.reduce((a,b)=>{
-
-    	return 1/a+1/b
-    },0);
+     var harm = num.reduce((a,b)=> a+1/b,0);
 
      alert("Harmonic is: "+harm);
 
